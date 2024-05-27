@@ -1,0 +1,283 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h2{
+    font-size: 2.5em;
+}
+h3{
+    font-size: 1.2em;
+}
+p{
+    font-size: 1em;
+}
+.logo img{
+    width: 8em;
+    height: 100%;
+}
+header{
+    display: flex;
+    background-image: linear-gradient(#F2E3D5, white);
+    justify-content: space-between;   
+    
+}
+header nav{
+    display: flex;
+    align-items: center;
+}
+header nav ul li{
+    display: inline-block;
+    list-style: none;     
+}
+nav ul li a{
+    color: #024959;
+    text-decoration: none;
+    font-size: 1.3em;
+    margin: 0 1.5em;
+}
+
+.bannerPri{
+    background-image: url("./../assets/fondo\ pri.jpg");    
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #012E40;
+    
+}
+
+.bannerPri h2 a{
+    text-decoration: none;
+    color: #012E40;
+    background-color: rgba(255, 255, 255,0.8);
+    padding: 1em 2em;
+    border-radius: 8px;
+    border-bottom: 3px solid #024959;
+}
+
+.seccion{
+    display: flex;
+    padding: 3em;
+}
+.textoSecc{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;    
+    width: 60%;    
+    padding: 10em;
+    box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+    
+}
+.textoSecc h2{    
+    color: #012E40;
+}
+.textoSecc p{    
+    color: rgb(107, 107, 107);
+}
+
+.textoSecc h3 a{    
+    text-decoration: none;
+    background-color: #024959c7;
+    padding: 1em;
+    border-radius: 5px;
+    border-bottom: 3px solid #F2E3D5;
+    color: white;
+    text-align: center;
+}
+.imgSecc{
+    width: 40%;     
+}
+.imgSecc img{    
+    box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;    
+}
+
+footer{
+    display: flex;
+    background-color:  #024959;
+    background-color: #024959;
+    flex-direction: column;
+    align-items: center;
+    padding: 3em;
+}
+footer p{    
+    color: white;
+}
+.redes{
+    margin-bottom: 2em;
+    border-bottom: 1px solid #F2E3D5;
+    padding: 1em;
+}
+.redes a{
+    padding: 0 0.5em;
+}
+.busRut{
+    background-image: url("./../assets/rutinas.jpg");
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3em;
+}
+.buscar{
+    margin-bottom: 6em;
+}
+
+.buscar input{
+    width: 25em;
+    height: 100%;
+    padding: 10px 35px 10px 10px;
+    border-radius: 5px; 
+    border: 0.5px solid rgb(160, 160, 160);
+    outline: none;
+    font-size: 1rem;
+    
+}
+.buscar button{
+    background-color: #024959;
+    padding: 10px 15px; 
+    border: 0;  
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.busRut h1{
+    font-size: 45px;    
+    margin-bottom: 2em;
+}
+
+.busRut h3{       
+    margin-bottom: 3em;
+}
+
+.busRut a{
+    background-color: #012E40;    
+    font-size: 20px;
+    color: white;
+    text-decoration: none;    
+    padding: 1em 4em;
+    text-decoration: none;
+    border-radius: 5px;
+    
+}
+
+.secSup{
+    display: flex;
+    flex: row;
+    flex-wrap: wrap;
+    padding: 2em;
+}
+.sup img{
+    width: 100%; 
+    margin-bottom: 1em; 
+    border-bottom: 1.5px solid #024959;  
+}
+.secSup .sup{
+    width: 33%;
+    text-align: center;
+    padding: 2em;
+    margin: 1.5px;
+    box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+}
+#suplementos{
+    background-image: url("./../assets/suplementos.jpg");
+    height: 90vh;
+    color: white;
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+#recetas{
+    background-image: url("./../assets/recetas.jpg");
+    height: 90vh;
+    color: white;
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+
+.secRec{
+    display: flex;    
+    flex-wrap: nowrap;
+    padding: 2em;
+}
+.rec img{
+    width: 100%; 
+    margin-bottom: 1em; 
+    border-radius: 45%;
+}
+ 
+.secRec .rec{
+    width: 25%;    
+    padding: 2em;
+    margin: 2em;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.3);
+}
+
+.secRec h4{
+    color: #012E40;
+    font-size: 20px;
+}
+.secRec p{
+    margin: 2em 0;
+    color: rgb(119, 118, 118);
+}
+
+.secRec p a{
+    text-decoration: none;
+    padding: 1em 2em;
+    color: white;
+    text-align: center;
+    background-color: #024959;
+    border-radius: 8px;
+}
+
+.conta{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5em;
+    padding: 3em .7em;
+    text-align: center;
+}
+
+.form{
+    display: grid;
+    justify-items: center;
+    gap: 1.5em;
+}
+
+.input{
+    width: 80%;
+    max-width: 500px;    
+    border: 0.1px solid #024959;
+    padding: 1em;    
+    border-radius: 0.6em;
+}
+
+.form .but{
+    background-color: #024959;
+    color: #fff;
+    font-weight: 600;
+}
+
+.conta h2{    
+    color: #012E40;
+}
+
+.conta p{
+    margin: 0.3em 0;
+    font-size: 20px;
+    color: #024959;
+}
+
+
+
