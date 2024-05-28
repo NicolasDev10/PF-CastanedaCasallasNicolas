@@ -3,8 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 h2{
-    font-size: 2.5em;
+    font-size: 2em;
 }
 h3{
     font-size: 1.2em;
@@ -26,6 +27,9 @@ header nav{
     display: flex;
     align-items: center;
 }
+header nav ul{
+    margin: 0;
+}
 header nav ul li{
     display: inline-block;
     list-style: none;     
@@ -38,27 +42,41 @@ nav ul li a{
 }
 
 .bannerPri{
-    background-image: url("./../assets/fondo\ pri.jpg");    
-    height: 90vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #012E40;
-    
+    width: 100%;
+    height: auto;
+    padding: 0;    
+    color: #012E40; 
+    position: relative;   
 }
 
-.bannerPri h2 a{
-    text-decoration: none;
+.bannerPri h2{
+    position: absolute;
+    text-align: center;
+    width: 80%;
+    top: 50%;
+    right: 50%;        
+    transform: translate(50%, -50%);    
+}
+.bannerPri h2 a{    
+    text-decoration: none;    
     color: #012E40;
     background-color: rgba(255, 255, 255,0.8);
-    padding: 1em 2em;
+    padding: 0.5em 1em;
     border-radius: 8px;
     border-bottom: 3px solid #024959;
 }
 
+@media screen and (max-width: 576px) {
+    .bannerPri h2{
+        font-size: 1.3em;        
+    }
+}
+
+
 .seccion{
     display: flex;
     padding: 3em;
+    border: 3px solid #39a070;
 }
 .textoSecc{
     display: flex;
