@@ -14,35 +14,21 @@ p{
     font-size: 1em;
 }
 .logo img{
-    width: 8em;
+    width: 5em;
     height: 100%;
 }
-header{
-    display: flex;
-    background-image: linear-gradient(#F2E3D5, white);
-    justify-content: space-between;   
-    
+.header{
+    background-image: linear-gradient(#f7eee6, white);    
 }
-header nav{
-    display: flex;
-    align-items: center;
-}
-header nav ul{
-    margin: 0;
-}
-header nav ul li{
-    display: inline-block;
-    list-style: none;     
-}
+
 nav ul li a{
     color: #024959;
     text-decoration: none;
-    font-size: 1.3em;
+    font-size: 1.5em;
     margin: 0 1.5em;
 }
 
-.bannerPri{
-    width: 100%;
+.bannerPri{    
     height: auto;
     padding: 0;    
     color: #012E40; 
