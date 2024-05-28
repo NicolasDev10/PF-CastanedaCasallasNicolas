@@ -207,15 +207,34 @@ footer p{
     margin: 1.5px;
     box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
 }
-#suplementos{
-    background-image: url("./../assets/suplementos.jpg");
-    height: 90vh;
-    color: white;
-    display: flex;    
-    justify-content: center;
-    align-items: center;
-    font-size: 40px;
+.suplementos{
+    height: auto;
+    padding: 0;    
+    color: #ffffff; 
+    position: relative;
 }
+.suplementos h2{
+    position: absolute;
+    text-align: center;
+    width: 80%;
+    top: 50%;
+    right: 50%;        
+    transform: translate(50%, -50%);    
+}
+.suplementos h2 a{    
+    text-decoration: none;    
+    color: #ffffff;    
+}
+
+@media screen and (max-width: 576px) {
+    .suplementos h2{
+        font-size: 1.3em;        
+    }
+    .secSup{
+        justify-content: center;
+    }
+}
+
 #recetas{
     background-image: url("./../assets/recetas.jpg");
     height: 90vh;
