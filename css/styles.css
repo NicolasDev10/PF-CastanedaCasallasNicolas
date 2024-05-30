@@ -189,30 +189,13 @@ footer p{
     
 }
 
-.secSup{
-    display: flex;
-    flex: row;
-    flex-wrap: wrap;
-    padding: 2em;
-}
-.sup img{
-    width: 100%; 
-    margin-bottom: 1em; 
-    border-bottom: 1.5px solid #024959;  
-}
-.secSup .sup{
-    width: 33%;
-    text-align: center;
-    padding: 2em;
-    margin: 1.5px;
-    box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
-}
 .suplementos{
     height: auto;
     padding: 0;    
     color: #ffffff; 
     position: relative;
 }
+
 .suplementos h2{
     position: absolute;
     text-align: center;
@@ -222,16 +205,48 @@ footer p{
     transform: translate(50%, -50%);    
 }
 .suplementos h2 a{    
-    text-decoration: none;    
-    color: #ffffff;    
+    text-decoration: none;
+    color: #ffffff;         
 }
+
+.secSup{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: auto auto auto;
+    gap: 3px;
+    padding: 2em;
+}
+.sup img{
+    width: 100%; 
+    margin-bottom: 1em; 
+    border-bottom: 1.5px solid #024959;  
+}
+.secSup .sup{    
+    text-align: center;
+    padding: 2em;     
+    box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+}
+
 
 @media screen and (max-width: 576px) {
     .suplementos h2{
         font-size: 1.3em;        
     }
-    .secSup{
-        justify-content: center;
+    .secSup .sup{
+        padding: 1em;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    
+    .secSup {        
+        grid-template-columns: 50% 50%;             
+    }
+    .sup{       
+       justify-self: center;
+    }
+    .sup p {
+        font-size: 0.8em;  
     }
 }
 
