@@ -3,7 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+h1{
+    font-size: 3em;
+}
 h2{
     font-size: 2.3em;
 }
@@ -251,14 +253,18 @@ footer p{
     }
 }
 
-#recetas{
-    background-image: url("./../assets/recetas.jpg");
-    height: 90vh;
-    color: white;
-    display: flex;    
-    justify-content: center;
-    align-items: center;
-    font-size: 40px;
+.recetas{           
+    position: relative;
+    padding: 0;    
+}
+.recetas h1{    
+    color: white;    
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 50%;
+    right: 50%;        
+    transform: translate(50%, -50%); 
 }
 
 .secRec{
