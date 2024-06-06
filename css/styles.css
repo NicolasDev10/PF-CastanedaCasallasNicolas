@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 h1{
-    font-size: 3em;
+    font-size: 2.6em;
 }
 h2{
     font-size: 2.3em;
@@ -37,7 +37,7 @@ nav ul li a{
     position: relative;   
 }
 
-.bannerPri h2{
+.bannerPri h1{
     position: absolute;
     text-align: center;
     width: 100%;
@@ -45,7 +45,7 @@ nav ul li a{
     right: 50%;        
     transform: translate(50%, -50%);    
 }
-.bannerPri h2 a{    
+.bannerPri h1 a{    
     text-decoration: none;    
     color: #012E40;
     background-color: rgba(255, 255, 255,0.8);
@@ -55,7 +55,7 @@ nav ul li a{
 }
 
 @media screen and (max-width: 576px) {
-    .bannerPri h2{
+    .bannerPri h1{
         font-size: 1.3em;        
     }
 }
@@ -84,7 +84,7 @@ nav ul li a{
 
 .textoSecc h3 a{    
     text-decoration: none;
-    background-color: #024959c7;
+    background-color: #024959;
     padding: 0.7em;
     border-radius: 5px;    
     color: white;
@@ -257,25 +257,26 @@ footer p{
     position: relative;
     padding: 0;    
 }
-.recetas h1{    
+.recetas h2{    
     color: white;    
     position: absolute;
     text-align: center;
     width: 100%;
-    top: 50%;
+    top: 49%;
     right: 50%;        
     transform: translate(50%, -50%); 
 }
 
 .secRec{
-    display: flex;    
-    flex-wrap: nowrap;
+    display: flex;
+    justify-content: space-evenly;    
+    flex-wrap: wrap;
     padding: 2em;
 }
 .rec img{
     width: 100%; 
     margin-bottom: 1em; 
-    border-radius: 45%;
+    border-radius: 50%;
 }
  
 .secRec .rec{
@@ -287,8 +288,7 @@ footer p{
 }
 
 .secRec h4{
-    color: #012E40;
-    font-size: 20px;
+    color: #012E40;    
 }
 .secRec p{
     margin: 2em 0;
@@ -297,11 +297,32 @@ footer p{
 
 .secRec p a{
     text-decoration: none;
-    padding: 1em 2em;
+    padding: 1em 1em;
     color: white;
+    width: 100%;
     text-align: center;
     background-color: #024959;
     border-radius: 8px;
+}
+
+@media screen and (max-width: 832px) {
+    
+    .secRec {
+        padding: 0;             
+        justify-content: center;            
+    }
+    .secRec .rec{       
+       width: 40%;       
+    }
+    
+}
+@media screen and (max-width: 576px) {
+    
+    
+    .secRec .rec{       
+       width: 80%;       
+    }
+    
 }
 
 .conta{
