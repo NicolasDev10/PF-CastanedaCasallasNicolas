@@ -1,0 +1,27 @@
+{
+  "name": "preentrega_nicolas",
+  "version": "1.0.0",
+  "description": "proyecto sobre una pagina fit",
+  "main": "index.html",
+  "scripts": {
+    "test": "\u001b[C\u001b[C\u001b[C\u001b[D\u001b[D\u001b[D\u001b[D"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NicolasDev10/PreEntrega2-CastanedaCasallasN.git"
+  },
+  "keywords": [
+    "rutinas",
+    "suplementos",
+    "recetas",
+    "gimnasio",
+    "ejercicio",
+    "fit"
+  ],
+  "author": "NIcolas\u001b[D\u001b[D\u001b[D\u001b[D\u001b[i\u001b[C\u001b[C\u001b[C\u001b[C\u001b[CDev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NicolasDev10/PreEntrega2-CastanedaCasallasN/issues"
+  },
+  "homepage": "https://github.com/NicolasDev10/PreEntrega2-CastanedaCasallasN#readme"
+}
