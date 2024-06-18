@@ -1,62 +1,82 @@
+$h1: 2.7em;
+$h2: 2.3em;
+$h3: 1.5em;
+$p: 1em;
+$max: 100%;
+$min: 0;
+$color1: #024959;
+$color2: #012E40;
+$color3: white;
+
 *{
-    margin: 0;
-    padding: 0;
+    margin: $min;
+    padding: $min;
     box-sizing: border-box;
-}
+} 
 h1{
-    font-size: 2.6em;
+    font-size: $h1;
 }
 h2{
-    font-size: 2.3em;
+    font-size: $h2;
 }
 h3{
-    font-size: 1.5em;
+    font-size: $h3;
 }
 p{
-    font-size: 1em;
+    font-size: $p;
 }
 .logo img{
     width: 5em;
-    height: 100%;
+    height: $max;
 }
 .header{
-    background-image: linear-gradient(#f7eee6, white);    
+    background-image: linear-gradient(#f7eee6, $color3);    
 }
 
 nav ul li a{
-    color: #024959;
+    color: $color1;
     text-decoration: none;
-    font-size: 1.5em;
-    margin: 0 1.5em;
+    font-size: $h3;
+    margin: $min $h3;
+}
+
+.container-fluid{
+    padding: $min;
 }
 
 .bannerPri{    
-    height: auto;
-    padding: 0;    
-    color: #012E40; 
+    padding: $min;    
+    color: $color2; 
     position: relative;   
 }
 
 .bannerPri h1{
     position: absolute;
     text-align: center;
-    width: 100%;
-    top: 50%;
-    right: 50%;        
-    transform: translate(50%, -50%);    
+    width: $max;
+    margin: $min;
+    top: $max/2;
+    right: $max/2;        
+    transform: translate($max/2, -$max/2);    
 }
 .bannerPri h1 a{    
     text-decoration: none;    
-    color: #012E40;
+    color: $color2;
     background-color: rgba(255, 255, 255,0.8);
-    padding: 0.5em 1em;
+    padding: 0.5em $p;
     border-radius: 8px;
-    border-bottom: 3px solid #024959;
+    border-bottom: 3px solid $color1;
+}
+
+@media screen and (max-width: 768px) {
+    .bannerPri h1{
+        font-size: 1.8em;        
+    }
 }
 
 @media screen and (max-width: 576px) {
     .bannerPri h1{
-        font-size: 1.3em;        
+        font-size: $h3;        
     }
 }
 
@@ -71,31 +91,31 @@ nav ul li a{
     flex-direction: column;
     justify-content: space-evenly;       
     padding: 3em;
-    box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+    box-shadow: 0px 3px 5px rgba($min,$min,$min,0.2);
     
 }
 .textoSecc h2{    
-    color: #012E40;
+    color: $color2;
 }
 .textoSecc p{    
     color: rgb(107, 107, 107);
-    width: 100%;
+    width: $max;
 }
 
 .textoSecc h3 a{    
     text-decoration: none;
-    background-color: #024959;
+    background-color: $color1;
     padding: 0.7em;
     border-radius: 5px;    
-    color: white;
+    color: $color3;
     text-align: center;
 }
 
 
 .imgSecc img{    
-    box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+    box-shadow: 0px 3px 5px rgba($min,$min,$min,0.2);
     border-radius: 8px;
-    width: 100%;
+    width: $max;
     height: auto;    
 }
 
@@ -115,7 +135,7 @@ nav ul li a{
     }
 
     .imgSecc img{
-        margin-top: 1em;
+        margin-top: $p;
         
     }
 
@@ -123,27 +143,27 @@ nav ul li a{
 
 footer{
     display: flex;
-    background-color:  #024959;
-    background-color: #024959;
+    background-color:  $color1;
+    background-color: $color1;
     flex-direction: column;
     align-items: center;
     padding: 3em;
 }
 footer p{    
-    color: white;
+    color: $color3;
 }
 .redes{
     margin-bottom: 2em;
     border-bottom: 1px solid #F2E3D5;
-    padding: 1em;
+    padding: $p;
 }
 .redes a{
-    padding: 0 0.5em;
+    padding: $min 0.5em;
 }
 .busRut{
     background-image: url("./../assets/rutinas.jpg");
     height: 100vh;
-    color: white;
+    color: $color3;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -156,7 +176,7 @@ footer p{
 
 .buscar input{
     width: 25em;
-    height: 100%;
+    height: $max;
     padding: 10px 35px 10px 10px;
     border-radius: 5px; 
     border: 0.5px solid rgb(160, 160, 160);
@@ -165,10 +185,10 @@ footer p{
     
 }
 .buscar button{
-    background-color: #024959;
+    background-color: $color1;
     padding: 10px 15px; 
-    border: 0;  
-    border-radius: 0 5px 5px 0;
+    border: $min;  
+    border-radius: $min 5px 5px $min;
     cursor: pointer;
 }
 
@@ -182,11 +202,11 @@ footer p{
 }
 
 .busRut a{
-    background-color: #012E40;    
+    background-color: $color2;    
     font-size: 20px;
-    color: white;
+    color: $color3;
     text-decoration: none;    
-    padding: 1em 4em;
+    padding: $p 4em;
     text-decoration: none;
     border-radius: 5px;
     
@@ -194,8 +214,8 @@ footer p{
 
 .suplementos{
     height: auto;
-    padding: 0;    
-    color: #ffffff; 
+    padding: $min;    
+    color: $color3; 
     position: relative;
 }
 
@@ -203,13 +223,13 @@ footer p{
     position: absolute;
     text-align: center;
     width: 80%;
-    top: 50%;
-    right: 50%;        
-    transform: translate(50%, -50%);    
+    top: $max/2;
+    right: $max/2;        
+    transform: translate($max/2, -$max/2);    
 }
 .suplementos h2 a{    
     text-decoration: none;
-    color: #ffffff;         
+    color: $color3;         
 }
 
 .secSup{
@@ -220,14 +240,14 @@ footer p{
     padding: 2em;
 }
 .sup img{
-    width: 100%; 
-    margin-bottom: 1em; 
-    border-bottom: 1.5px solid #024959;  
+    width: $max; 
+    margin-bottom: $p; 
+    border-bottom: 1.5px solid $color1;  
 }
 .secSup .sup{    
     text-align: center;
     padding: 2em;     
-    box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+    box-shadow: 0px 3px 5px rgba($min,$min,$min,0.2);
 }
 
 
@@ -236,7 +256,7 @@ footer p{
         font-size: 1.3em;        
     }
     .secSup .sup{
-        padding: 1em;
+        padding: $p;
     }
 }
 
@@ -255,16 +275,16 @@ footer p{
 
 .recetas{           
     position: relative;
-    padding: 0;    
+    padding: $min;    
 }
 .recetas h2{    
-    color: white;    
+    color: $color3;    
     position: absolute;
     text-align: center;
-    width: 100%;
+    width: $max;
     top: 49%;
-    right: 50%;        
-    transform: translate(50%, -50%); 
+    right: $max/2;        
+    transform: translate($max/2, -$max/2); 
 }
 
 .secRec{
@@ -274,8 +294,8 @@ footer p{
     padding: 2em;
 }
 .rec img{
-    width: 100%; 
-    margin-bottom: 1em; 
+    width: $max; 
+    margin-bottom: $p; 
     border-radius: 50%;
 }
  
@@ -284,31 +304,31 @@ footer p{
     padding: 2em;
     margin: 2em;
     border-radius: 8px;
-    box-shadow: 0px 4px 6px rgba(0,0,0,0.3);
+    box-shadow: 0px 4px 6px rgba($min,$min,$min,0.3);
 }
 
 .secRec h4{
-    color: #012E40;    
+    color: $color2;    
 }
 .secRec p{
-    margin: 2em 0;
+    margin: 2em $min;
     color: rgb(119, 118, 118);
 }
 
 .secRec p a{
     text-decoration: none;
-    padding: 1em 1em;
-    color: white;
-    width: 100%;
+    padding: $p $p;
+    color: $color3;
+    width: $max;
     text-align: center;
-    background-color: #024959;
+    background-color: $color1;
     border-radius: 8px;
 }
 
 @media screen and (max-width: 832px) {
     
     .secRec {
-        padding: 0;             
+        padding: $min;             
         justify-content: center;            
     }
     .secRec .rec{       
@@ -329,7 +349,7 @@ footer p{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 1.5em;
+    gap: $h3;
     padding: 3em .7em;
     text-align: center;
 }
@@ -337,33 +357,33 @@ footer p{
 .form{
     display: grid;
     justify-items: center;
-    gap: 1.5em;
+    gap: $h3;
 }
 
 .input{
     width: 80%;
     max-width: 500px;    
-    border: 0.1px solid #024959;
-    padding: 1em;    
+    border: 0.1px solid $color1;
+    padding: $p;    
     border-radius: 0.6em;
 }
 
 .form .but{
-    background-color: #024959;
-    color: #fff;
+    background-color: $color1;
+    color: $color3;
     font-weight: 600;
 }
 
 .conta h2{    
-    color: #012E40;
+    color: $color2;
 }
 
 .conta p{
-    margin: 0.3em 0;
+    margin: 0.3em $min;
     font-size: 20px;
-    color: #024959;
+    color: $color1;
 }
 
 .rutina .cardRut{
-    padding: 0;    
+    padding: $min;    
 }
