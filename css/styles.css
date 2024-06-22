@@ -21,8 +21,9 @@ p {
 }
 
 .logo img {
-  width: 5em;
+  width: 6em;
   height: 100%;
+  margin-left: 1.5em;
 }
 
 .header {
@@ -156,20 +157,129 @@ footer p {
 }
 
 .busRut {
-  background-image: url("./../assets/rutinas.jpg");
-  height: 100vh;
+  position: relative;
   color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 3em;
+  padding: 0;
 }
 
-.buscar {
-  margin-bottom: 6em;
+.textRut h1 {
+  position: absolute;
+  text-align: center;
+  margin: 0;
+  width: 100%;
+  top: 20%;
+  right: 50%;
+  transform: translate(50%, -10%);
 }
 
+.textRut h3 {
+  position: absolute;
+  text-align: center;
+  margin: 0;
+  width: 100%;
+  top: 35%;
+  right: 50%;
+  transform: translate(50%, -17.5%);
+}
+
+.textRut .buscar {
+  position: absolute;
+  text-align: center;
+  margin: 0;
+  width: 100%;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -25%);
+}
+
+.textRut p {
+  position: absolute;
+  text-align: center;
+  margin: 0;
+  width: 100%;
+  top: 65%;
+  right: 50%;
+  transform: translate(50%, -32.5%);
+}
+
+@media screen and (max-width: 992px) {
+  .textRut h1 {
+    position: absolute;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+    top: 20%;
+    right: 50%;
+    transform: translate(50%, -10%);
+  }
+  .textRut h3 {
+    position: absolute;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+    top: 40%;
+    right: 50%;
+    transform: translate(50%, -20%);
+  }
+  .textRut .buscar {
+    position: absolute;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+    top: 60%;
+    right: 50%;
+    transform: translate(50%, -30%);
+  }
+  .textRut p {
+    position: absolute;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+    top: 80%;
+    right: 50%;
+    transform: translate(50%, -40%);
+  }
+}
+@media screen and (max-width: 758px) {
+  .textRut h1 {
+    position: absolute;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+    top: 15%;
+    right: 50%;
+    transform: translate(50%, -7.5%);
+    font-size: 2em;
+  }
+  .textRut h3 {
+    position: absolute;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+    top: 40%;
+    right: 50%;
+    transform: translate(50%, -20%);
+    font-size: 1.3em;
+  }
+  .textRut .buscar {
+    position: absolute;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+    top: 65%;
+    right: 50%;
+    transform: translate(50%, -32.5%);
+  }
+  .textRut p {
+    position: absolute;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+    top: 90%;
+    right: 50%;
+    transform: translate(50%, -45%);
+  }
+}
 .buscar input {
   width: 25em;
   height: 100%;
@@ -188,20 +298,9 @@ footer p {
   cursor: pointer;
 }
 
-.busRut h1 {
-  font-size: 45px;
-  margin-bottom: 2em;
-}
-
-.busRut h3 {
-  margin-bottom: 3em;
-}
-
 .busRut a {
   background-color: #012E40;
-  font-size: 20px;
   color: white;
-  text-decoration: none;
   padding: 1em 4em;
   text-decoration: none;
   border-radius: 5px;
@@ -223,11 +322,6 @@ footer p {
   transform: translate(50%, -50%);
 }
 
-.suplementos h2 a {
-  text-decoration: none;
-  color: white;
-}
-
 .secSup {
   display: grid;
   grid-template-columns: 33% 33% 33%;
@@ -244,6 +338,7 @@ footer p {
 
 .secSup .sup {
   text-align: center;
+  color: #024959;
   padding: 2em;
   box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
 }
@@ -277,7 +372,7 @@ footer p {
   position: absolute;
   text-align: center;
   width: 100%;
-  top: 49%;
+  top: 50%;
   right: 50%;
   transform: translate(50%, -50%);
 }
@@ -292,24 +387,21 @@ footer p {
 .rec img {
   width: 100%;
   margin-bottom: 1em;
-  border-radius: 50%;
+  border-radius: 30%;
 }
 
 .secRec .rec {
   width: 25%;
+  text-align: end;
+  color: #012E40;
   padding: 2em;
   margin: 2em;
   border-radius: 8px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
 }
 
-.secRec h4 {
-  color: #012E40;
-}
-
 .secRec p {
   margin: 2em 0;
-  color: rgb(119, 118, 118);
 }
 
 .secRec p a {
@@ -322,7 +414,7 @@ footer p {
   border-radius: 8px;
 }
 
-@media screen and (max-width: 832px) {
+@media screen and (max-width: 992px) {
   .secRec {
     padding: 0;
     justify-content: center;
@@ -331,7 +423,7 @@ footer p {
     width: 40%;
   }
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 640px) {
   .secRec .rec {
     width: 80%;
   }
@@ -373,6 +465,11 @@ footer p {
   margin: 0.3em 0;
   font-size: 20px;
   color: #024959;
+}
+
+.rutina {
+  margin: 3em 0;
+  padding: 1em;
 }
 
 .rutina .cardRut {
