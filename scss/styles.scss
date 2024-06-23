@@ -1,7 +1,9 @@
-$h1: 2.7em;
-$h2: 2.3em;
-$h3: 1.5em;
-$p: 1em;
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NZ:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@500&family=Playwrite+NG+Modern:wght@100..400&display=swap');
+$h1: 3em;
+$h2: 2.5em;
+$h3: 1.6em;
+$p: 1.1em;
 $a: 0.5em;
 $max: 100%;
 $min: 0;
@@ -9,23 +11,40 @@ $color1: #024959;
 $color2: #012E40;
 $color3: white;
 
+
+@mixin text($font, $fami, $val) {
+    font-family: $font, $fami;
+    font-optical-sizing: auto;
+    font-weight: $val;
+    font-style: normal;
+  }
+
 *{
-    margin: $min;
+    margin: $min; 
     padding: $min;
     box-sizing: border-box;
 } 
+
 h1{
     font-size: $h1;
+    @include text ("Oswald", sans-serif, 400);
 }
 h2{
-    font-size: $h2;
+    font-size: $h2; 
+    @include text ("Oswald", sans-serif, 400);       
 }
-h3{
+h3, h4{
     font-size: $h3;
+    @include text ("Playwrite NG Modern", cursive, 300);
 }
 p{
-    font-size: $p;
+    font-size: $p; 
+    @include text ("Oswald", sans-serif, 300);   
 }
+a{
+    @include text ("Playwrite NZ", cursive, 300); 
+}
+
 .logo img{
     width: 6em;
     height: $max;
@@ -61,6 +80,7 @@ nav ul li a{
     right: $max/2;        
     transform: translate($max/2, -$max/2);    
 }
+
 .bannerPri h1 a{    
     text-decoration: none;    
     color: $color2;
@@ -68,6 +88,10 @@ nav ul li a{
     padding: 0.5em $p;
     border-radius: 8px;
     border-bottom: 3px solid $color1;
+    &:hover{
+      background-color:#02495900;
+      color: $color3;  
+    }
 }
 
 @media screen and (max-width: 768px) {

@@ -1,26 +1,51 @@
-* { /*resetear valores navegador*/
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+NZ:wght@100..400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@500&family=Playwrite+NG+Modern:wght@100..400&display=swap");
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-h1 { /*tamaños fuentes de textos*/
-  font-size: 2.7em;
+h1 {
+  font-size: 3em;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 h2 {
-  font-size: 2.3em;
+  font-size: 2.5em;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
-h3 {
-  font-size: 1.5em;
+h3, h4 {
+  font-size: 1.6em;
+  font-family: "Playwrite NG Modern", cursive;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
 }
 
 p {
-  font-size: 1em;
+  font-size: 1.1em;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
 }
 
-.logo img { /*logo*/
+a {
+  font-family: "Playwrite NZ", cursive;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.logo img {
   width: 6em;
   height: 100%;
   margin-left: 1.5em;
@@ -30,18 +55,18 @@ p {
   background-image: linear-gradient(#f7eee6, white);
 }
 
-nav ul li a { /*menu de navegacion*/
+nav ul li a {
   color: #024959;
   text-decoration: none;
-  font-size: 1.5em;
-  margin: 0 1.5em;
+  font-size: 1.6em;
+  margin: 0 1.6em;
 }
 
-.container-fluid { /*contenedores fluidos bootstrap*/
+.container-fluid {
   padding: 0;
 }
 
-.bannerPri { /*banner home*/
+.bannerPri {
   padding: 0;
   color: #012E40;
   position: relative;
@@ -61,22 +86,26 @@ nav ul li a { /*menu de navegacion*/
   text-decoration: none;
   color: #012E40;
   background-color: rgba(255, 255, 255, 0.8);
-  padding: 0.5em 1em;
+  padding: 0.5em 1.1em;
   border-radius: 8px;
   border-bottom: 3px solid #024959;
 }
+.bannerPri h1 a:hover {
+  background-color: rgba(2, 73, 89, 0);
+  color: white;
+}
 
-@media screen and (max-width: 768px) { 
+@media screen and (max-width: 768px) {
   .bannerPri h1 {
     font-size: 1.8em;
   }
 }
 @media screen and (max-width: 576px) {
   .bannerPri h1 {
-    font-size: 1.5em;
+    font-size: 1.6em;
   }
 }
-.seccion { /*secciones paginas*/
+.seccion {
   display: flex;
   padding: 2em;
   border-bottom: 0.2px solid rgb(223, 221, 221);
@@ -130,10 +159,10 @@ nav ul li a { /*menu de navegacion*/
     align-items: center;
   }
   .imgSecc img {
-    margin-top: 1em;
+    margin-top: 1.1em;
   }
 }
-footer { /*seccion footer*/
+footer {
   display: flex;
   background-color: #024959;
   background-color: #024959;
@@ -149,14 +178,14 @@ footer p {
 .redes {
   margin-bottom: 2em;
   border-bottom: 1px solid #F2E3D5;
-  padding: 1em;
+  padding: 1.1em;
 }
 
 .redes a {
   padding: 0 0.5em;
 }
 
-.busRut { /*pagina rutinas*/
+.busRut {
   position: relative;
   color: white;
   padding: 0;
@@ -301,12 +330,12 @@ footer p {
 .busRut a {
   background-color: #012E40;
   color: white;
-  padding: 1em 4em;
+  padding: 1.1em 4em;
   text-decoration: none;
   border-radius: 5px;
 }
 
-.suplementos { /*pagina suplementos*/
+.suplementos {
   height: auto;
   padding: 0;
   color: white;
@@ -332,7 +361,7 @@ footer p {
 
 .sup img {
   width: 100%;
-  margin-bottom: 1em;
+  margin-bottom: 1.1em;
   border-bottom: 1.5px solid #024959;
 }
 
@@ -348,7 +377,7 @@ footer p {
     font-size: 1.3em;
   }
   .secSup .sup {
-    padding: 1em;
+    padding: 1.1em;
   }
 }
 @media screen and (max-width: 450px) {
@@ -362,7 +391,7 @@ footer p {
     font-size: 0.8em;
   }
 }
-.recetas { /*pagina recetas*/
+.recetas {
   position: relative;
   padding: 0;
 }
@@ -386,7 +415,7 @@ footer p {
 
 .rec img {
   width: 100%;
-  margin-bottom: 1em;
+  margin-bottom: 1.1em;
   border-radius: 30%;
 }
 
@@ -406,7 +435,7 @@ footer p {
 
 .secRec p a {
   text-decoration: none;
-  padding: 1em 1em;
+  padding: 1.1em 1.1em;
   color: white;
   width: 100%;
   text-align: center;
@@ -428,11 +457,11 @@ footer p {
     width: 80%;
   }
 }
-.conta { /*pagina perfil*/
+.conta {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 1.5em;
+  gap: 1.6em;
   padding: 3em 0.7em;
   text-align: center;
 }
@@ -440,14 +469,14 @@ footer p {
 .form {
   display: grid;
   justify-items: center;
-  gap: 1.5em;
+  gap: 1.6em;
 }
 
 .input {
   width: 80%;
   max-width: 500px;
   border: 0.1px solid #024959;
-  padding: 1em;
+  padding: 1.1em;
   border-radius: 0.6em;
 }
 
