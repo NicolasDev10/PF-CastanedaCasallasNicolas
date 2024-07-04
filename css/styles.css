@@ -50,7 +50,7 @@ a {
 }
 
 .logo img {
-  width: 6em;
+  width: 5.5em;
   height: 100%;
   margin-left: 1.5em;
 }
@@ -438,12 +438,16 @@ footer p {
   width: 100%;
   margin-bottom: 1.1em;
   border-bottom: 1.5px solid #024959;
-  transition: height 1s;
-}
-.sup img:hover {
-  height: 600px;
 }
 
+@media screen and (min-width: 1200px) {
+  .sup img {
+    transition: height 1s;
+  }
+  .sup img:hover {
+    height: 500px;
+  }
+}
 @media screen and (max-width: 758px) {
   .secSup {
     grid-template-columns: 50% 50%;
@@ -538,6 +542,9 @@ footer p {
 @media screen and (max-width: 640px) {
   .secRec .rec {
     width: 80%;
+  }
+  .secRec .rec:hover {
+    width: 90%;
   }
 }
 @media screen and (max-width: 576px) {
