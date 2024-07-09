@@ -185,16 +185,18 @@ footer {
 
 footer p {
   color: white;
+  margin: 0.5em 0;
+  text-align: center;
 }
 
 .redes {
-  margin-bottom: 2em;
+  margin-bottom: 1.5em;
   border-bottom: 1px solid #F2E3D5;
   padding: 1.1em;
 }
 
 .redes a {
-  padding: 0 0.5em;
+  padding: 0.5em;
 }
 
 .busRut {
@@ -438,14 +440,18 @@ footer p {
   width: 100%;
   margin-bottom: 1.1em;
   border-bottom: 1.5px solid #024959;
+  transition: height 1s;
+}
+.sup img:hover {
+  height: 40em;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 1200px) {
   .sup img {
     transition: height 1s;
   }
   .sup img:hover {
-    height: 500px;
+    height: 25em;
   }
 }
 @media screen and (max-width: 758px) {
@@ -465,6 +471,12 @@ footer p {
   }
   .sup h3 {
     font-size: 0.9em;
+  }
+  .sup img {
+    transition: height 1s;
+  }
+  .sup img:hover {
+    height: 18em;
   }
 }
 .recetas {
